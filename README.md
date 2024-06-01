@@ -1,6 +1,6 @@
 # Consulta CEP
 
-Trabalho para a matéria de Desenvolvimento Mobile III utilizando Flutter.
+Trabalho para a matéria de Desenvolvimento Mobile III, utilizando um [exemplo do Cookbook](https://docs.flutter.dev/cookbook/design/package-fonts) e consumindo a API [ViaCep](https://viacep.com.br/).
 
 ## Proposta
 
@@ -8,7 +8,7 @@ Desenvolver um aplicativo em Flutter, sobre qualquer tema.
 
 Exemplos: Uma lista de tarefas, aplicativo para monitorar valores de moedas e criptomoedas, um album de fotos, um tracker de jogos, uma wiki.
 
-## Critérios de avaliação:
+## Critérios:
 
 - Navegação: O aplicativo deve ter navegação entre as telas.
 - Formulário: Deve existir ao menos uma tela de formulário, pode ser login, um cadastro, qualquer tipo de formulário.
