@@ -1,6 +1,7 @@
 import 'package:brasil_fields/brasil_fields.dart';
 import 'package:consulta_cep/controllers/cep_controller.dart';
 import 'package:consulta_cep/models/endereco_model.dart';
+import 'package:consulta_cep/pages/resultado_view.dart';
 import 'package:consulta_cep/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -58,6 +59,14 @@ class _ConsultaCepViewState extends State<ConsultaCepView> {
                   setState(() {
                     _endereco = endereco;
                   });
+
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ResultadoView(
+                              endereco: _endereco!,
+                            )),
+                  );
                 } catch (e) {
                   showDialog(
                     context: context,
@@ -81,20 +90,6 @@ class _ConsultaCepViewState extends State<ConsultaCepView> {
               },
               child: const Text('Consultar'),
             ),
-            const SizedBox(height: 16.0),
-            _endereco != null
-                ? Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('CEP: ${_endereco!.cep}'),
-                      Text('Logradouro: ${_endereco!.logradouro}'),
-                      Text('Complemento: ${_endereco!.complemento}'),
-                      Text('Bairro: ${_endereco!.bairro}'),
-                      Text('Localidade: ${_endereco!.localidade}'),
-                      Text('UF: ${_endereco!.uf}'),
-                    ],
-                  )
-                : Container(), // Exibe os detalhes do endereço se disponível
           ],
         ),
       ),

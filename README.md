@@ -1,16 +1,17 @@
-# consulta_cep
+# Consulta CEP
 
-A new Flutter project.
+Trabalho para a matéria de Desenvolvimento Mobile III utilizando Flutter.
 
-## Getting Started
+## Proposta
 
-This project is a starting point for a Flutter application.
+Desenvolver um aplicativo em Flutter, sobre qualquer tema.
 
-A few resources to get you started if this is your first Flutter project:
+Exemplos: Uma lista de tarefas, aplicativo para monitorar valores de moedas e criptomoedas, um album de fotos, um tracker de jogos, uma wiki.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Critérios de avaliação:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Navegação: O aplicativo deve ter navegação entre as telas.
+- Formulário: Deve existir ao menos uma tela de formulário, pode ser login, um cadastro, qualquer tipo de formulário.
+- Fetch: Deve buscar dados em alguma API e exibir na tela.
+- Cookbook: Implementar algum exemplo da documentação do Flutter. (Identifique qual foi implementado.)
+- Crie um arquivo README.md dentro da pasta do projeto para identificar qual cookbook foi utilizado e demais informações que considere importante.

@@ -4,7 +4,7 @@ class Utils {
     if (value == null || !exp.hasMatch(value)) {
       return 'Número de CEP inválido!';
     }
-    return ''; // Ou você pode retornar uma string vazia, dependendo do comportamento desejado
+    return '';
   }
 
   String removeCaracteresEspeciais(String value) {
